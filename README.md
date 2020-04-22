@@ -1,6 +1,6 @@
 # StudentPlanner
 
-> A Planner for Students, made by Students
+> My brilliant Nuxt.js project
 
 ## Build Setup
 

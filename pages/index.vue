@@ -1,14 +1,43 @@
 <template>
-  <v-banner>
-    <div class="pl-8">
-      <p class="display-4 pt-4">Welcome to Student Planner</p>
-      <p class="display-1 px-12">An all-in-one school utility app</p>
+  <div class="page">
+    <div class="heading">
+      <p class="display-4 font-weight-bold white--text">Welcome to Student Planner</p>
+      <br>
+      <br>
+      <p class="headline font-weight-bold white--text">The all-in-one education utility app</p>
     </div>
-  </v-banner>
+
+    <br>
+    <br>
+
+    <div class="tri-feature">
+      <v-row>
+        <TriFeature title="Lorem" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat rhoncus lectus, a facilisis nulla facilisis in. Morbi volutpat tincidunt diam non luctus. Fusce gravida arcu a odio hendrerit eleifend. Nulla iaculis lorem ut massa tincidunt, sit amet tempor nisi auctor. Sed vel tortor nisl. Praesent convallis lectus felis, vel porta massa mattis ut. Nam eget interdum metus. Aenean tincidunt, elit eu dapibus accumsan, tortor augue congue odio, id sodales arcu erat non nunc. Fusce at massa nulla. Cras rhoncus at orci vel gravida. Nam at quam mauris. Pellentesque dapibus massa quam, vel elementum eros laoreet consectetur."></TriFeature>
+        <TriFeature title="Lorem" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat rhoncus lectus, a facilisis nulla facilisis in. Morbi volutpat tincidunt diam non luctus. Fusce gravida arcu a odio hendrerit eleifend. Nulla iaculis lorem ut massa tincidunt, sit amet tempor nisi auctor. Sed vel tortor nisl. Praesent convallis lectus felis, vel porta massa mattis ut. Nam eget interdum metus. Aenean tincidunt, elit eu dapibus accumsan, tortor augue congue odio, id sodales arcu erat non nunc. Fusce at massa nulla. Cras rhoncus at orci vel gravida. Nam at quam mauris. Pellentesque dapibus massa quam, vel elementum eros laoreet consectetur."></TriFeature>
+        <TriFeature title="Lorem" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat rhoncus lectus, a facilisis nulla facilisis in. Morbi volutpat tincidunt diam non luctus. Fusce gravida arcu a odio hendrerit eleifend. Nulla iaculis lorem ut massa tincidunt, sit amet tempor nisi auctor. Sed vel tortor nisl. Praesent convallis lectus felis, vel porta massa mattis ut. Nam eget interdum metus. Aenean tincidunt, elit eu dapibus accumsan, tortor augue congue odio, id sodales arcu erat non nunc. Fusce at massa nulla. Cras rhoncus at orci vel gravida. Nam at quam mauris. Pellentesque dapibus massa quam, vel elementum eros laoreet consectetur."></TriFeature>
+      </v-row>
+    </div>
+  </div>
 </template>
 
-<script>
-export default {
+<style lang="scss">
+  .heading {
+    background-color: #08D8ED;
+    text-align: center;
+    padding: 200px 0;
+  }
 
+  .tri-feature {
+    margin: 0 32px;
+  }
+</style>
+
+<script>
+import TriFeature from "../components/TriFeature";
+
+export default {
+  components: {
+    TriFeature
+  }
 }
 </script>
