@@ -1,7 +1,9 @@
+require('dotenv').config()
 const express = require('express')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 const app = express()
+const mongoose = require('mongoose');
 
 // Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')
@@ -12,6 +14,10 @@ async function start () {
   const nuxt = new Nuxt(config)
 
   const { host, port } = nuxt.options.server
+
+  // Connect to Database
+  const uri = `mongodb+srv://appUser:${process.env.DB_PASSWORD}@studentplannercluster-ykqqe.mongodb.net/test?retryWrites=true&w=majority`
+  mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
 
   await nuxt.ready()
   // Build only in dev mode
@@ -30,4 +36,5 @@ async function start () {
     badge: true
   })
 }
+
 start()
