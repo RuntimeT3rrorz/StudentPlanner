@@ -4,7 +4,7 @@
       <p class="display-4 font-weight-bold white--text">Welcome to Student Planner</p>
       <br>
       <br>
-      <p class="headline font-weight-bold white--text">Made for students, by students</p>
+      <p class="display-2 font-weight-bold white--text">Made for students, by students</p>
     </div>
 
     <br>
