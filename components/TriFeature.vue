@@ -1,6 +1,6 @@
 <template>
   <v-col cols="12" sm="4">
-    <v-card color="#08D8ED" class="card">
+    <v-card color="#03A9F4" class="card">
       <div style="text-align: center;">
         <p class="display-3 white--text font-weight-bold">{{ title }}</p>
       </div>
