@@ -4,7 +4,7 @@
       <p class="display-4 font-weight-bold white--text">Welcome to Student Planner</p>
       <br>
       <br>
-      <p class="headline font-weight-bold white--text">The all-in-one education utility app</p>
+      <p class="headline font-weight-bold white--text">Made for students, by students</p>
     </div>
 
     <br>
@@ -22,7 +22,7 @@
 
 <style lang="scss">
   .heading {
-    background-color: #08D8ED;
+    background-color: #03A9F4;
     text-align: center;
     padding: 200px 0;
   }
